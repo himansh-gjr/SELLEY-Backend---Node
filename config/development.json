@@ -1,4 +1,5 @@
 {
-    "assetsBaseUrl":"http://150.129.181.7:9000/assets",
-    "port":9000
+    "assetsBaseUrl":"http://192.168.0.105:9000/assets/",
+    "port":9000,
+    "jwtPrivateKey":"jwtPrivateKey"
 }

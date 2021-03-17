@@ -17,11 +17,10 @@ router.post("/", validateWith(schema), (req, res) => {
     return res.status(400).send({ error: "Invalid email or password." });
 
   const token = jwt.sign(
-    { userId: user.id, name: user.name, email },
-    "jwtPrivateKey"
+    { userId: user.id, name: user.name, email }
+    /* Add jwtPrivateKey here  */
   );
   res.send(token);
-  console.log("login from backend");
 });
 
 module.exports = router;
